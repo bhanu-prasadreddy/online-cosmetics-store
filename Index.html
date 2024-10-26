@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pearl Cosmetics</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+    
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .login-btn {
+            background-color: #ef476f;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            background-image: url('https://tse4.mm.bing.net/th?id=OIP.X3J1NCbOzF49CvXJd_XWsgHaDL&pid=Api&P=0&h=220');
+            background-size: cover; /* Ensures the image covers the entire header */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            color: #333;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .explore-btn {
+            background-color: #ef476f;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero-image img {
+            max-width: 90%;
+            height: 300px;
+        }
+
+        /* Featured products */
+        .featured-products {
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .product {
+            text-align: center;
+            width: 250px;
+            height: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product p {
+            font-size: 18px;
+            color: #ef476f;
+        }
+
+        .discount {
+            font-size: 14px;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+
+            nav ul li {
+                margin-right: 15px;
+            }
+
+            .featured-products {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Pearl</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="C:\Users\poral\OneDrive\Desktop\web project final\about.html">About</a></li>
+                <li><a href="file:///C:/Users/poral/OneDrive/Desktop/webnewfinal/products.html">Beauty Products</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <a href="buy.html" class="login-btn">BuyNow</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Cosmetics that Everyone Loves!</h1>
+            <p>We have a huge collection of cosmetics in our Paris branch. Our products are always quality products.</p>
+            <a href="file:///C:/Users/poral/OneDrive/Desktop/webnewfinal/products.html" class="explore-btn">Explore Products</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.dzqB33x0LyqukcKpPZ52owHaFj&pid=Api&P=0&h=220" alt="Cosmetics Product Image">
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.oNHH9IY-hc1BPx9PAEHMEwHaFO&pid=Api&P=0&h=220" alt="Cool Water by Davidoff">
+            <h3>Cool Water by Davidoff</h3>
+            <p>$25.50</p>
+            <span class="discount">-35%</span>
+        </div>
+        <div class="product">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.BmT2atS9Z3O02MkK0bruIwAAAA&pid=Api&P=0&h=220" alt="Diamonds Rose">
+            <h3>Diamonds Rose</h3>
+            <p>$25.50</p>
+            <span class="discount">-35%</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pearl Cosmetics. All Rights Reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
